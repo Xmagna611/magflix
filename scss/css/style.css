@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr;
+  background: url(../assets/bg.jpg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 75px;
+  width: 100%;
+  background-color: #191919;
+  border-bottom: 1px solid #00ff00;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+header nav .logoTipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+header nav .logoTipo .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+}
+header nav .logoTipo .logo a {
+  text-decoration: none;
+  max-height: 38px;
+}
+header nav .logoTipo .logo a img {
+  width: 100%;
+}
+header nav .logoTipo .options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  font-family: "Bebas Neue", cursive;
+}
+header nav .logoTipo .options a {
+  text-decoration: none;
+  color: #ccc;
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+header nav .logoTipo .options a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+  color: #00ff00;
+}
+header nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2em;
+  width: 50%;
+  height: auto;
+}
+header nav .menu .category {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+}
+header nav .menu .category ion-icon {
+  color: #ccc;
+  font-size: 25pt;
+}
+header nav .menu .category ion-icon:hover {
+  color: #00ff00;
+  cursor: pointer;
+}
+header nav .menu .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .menu .search #search {
+  padding: 0 10px;
+  outline: none;
+  appearance: none;
+  border: none;
+  width: 25em;
+  height: 2em;
+  font-size: 11pt;
+  background: #1f1f1f;
+  color: #ccc;
+}
+header nav .menu .search .go {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2em;
+  border: none;
+  margin-bottom: 1px;
+  background-color: #1f1f1f;
+}
+header nav .menu .search .go ion-icon {
+  font-size: 20pt;
+  color: #ccc;
+}
+header nav .menu .search .go ion-icon:hover {
+  color: #00ff00;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+main .container .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+main .container .top .header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 75px;
+  border-bottom: 1px dotted #00ff00;
+  background-color: rgba(25, 25, 25, 0.5411764706);
+}
+main .container .top .header-top .section-title {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20pt;
+  letter-spacing: 2pt;
+  color: #ccc;
+}
+main .container .top .header-top .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .top .header-top .btn ion-icon {
+  font-size: 20pt;
+  color: #ccc;
+  transition: 0.3s;
+}
+main .container .top .header-top .btn ion-icon:hover {
+  transition: 0.3s;
+  color: #00ff00;
+  cursor: pointer;
+}
+main .container .top .films-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  border-bottom: 1px solid #00ff00;
+  padding: 10px 75px;
+}
+main .container .top .films-top .film-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+  background-image: linear-gradient(163deg, #00ff00 0%, #50ff50 100%);
+  transition: all 0.3s;
+}
+main .container .top .films-top .film-top:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3019607843);
+}
+main .container .top .films-top .film-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: 1px solid #00ff00;
+}
+main .container .top .films-top .film-top a img {
+  width: 9em;
+  transition: all 0.2s;
+}
+main .container .top .films-top .film-top a img:hover {
+  transform: scale(0.98);
+}
+main .container .pop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+}
+main .container .pop .header-pop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 75px;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20pt;
+  letter-spacing: 2pt;
+  color: #ccc;
+  border-bottom: 1px dotted #00ff00;
+  background-color: rgba(25, 25, 25, 0.5411764706);
+}
+main .container .pop .header-pop .select {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15pt;
+}
+main .container .pop .header-pop .select #category {
+  border: none;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 1pt;
+  color: #00ff00;
+  background-color: transparent;
+  cursor: pointer;
+}
+main .container .pop .header-pop .select #category option {
+  background-color: #191919;
+}
+main .container .pop .films {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  gap: 20px;
+  padding: 10px 75px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #00ff00;
+}
+main .container .pop .films .film {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+main .container .pop .films .film .linkFilms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 5px;
+}
+main .container .pop .films .film .linkFilms .poster {
+  border: 1px solid #00ff00;
+  width: 9em;
+  transition: all 0.2s;
+}
+main .container .pop .films .film .linkFilms .poster:hover {
+  transform: scale(0.98);
+}
+main .container .pop .films .film .linkFilms .poster:hover .film-name {
+  color: #00ff00;
+}
+@media (max-width: 428px) {
+  main .container .pop .films .film .linkFilms .poster {
+    width: 20em;
+  }
+}
+main .container .pop .films .film .linkFilms .film-name {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+main .container .pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 5%;
+  padding: 10px 75px;
+  font-family: "Bebas Neue", cursive;
+  color: #ccc;
+  background-color: rgba(25, 25, 25, 0.5411764706);
+}
+main .container .pages .page {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+main .container .pages .number-pages {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  gap: 10px;
+  user-select: none;
+}
+main .container .pages .number-pages .number-page {
+  width: 2%;
+  border: 1px solid #00ff00;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .container .pages .number-pages .number-page:hover {
+  background-color: #00ff00;
+  color: #191919;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 75px;
+  font-family: "Bebas Neue", cursive;
+  color: #ccc;
+  border-top: 1px solid #00ff00;
+}
+footer .about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+footer .about a {
+  text-decoration: none;
+  color: #ccc;
+  letter-spacing: 1px;
+}
+footer .about a:hover {
+  color: #00ff00;
+}
+footer .logotipo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+}
+footer .logotipo .foto {
+  width: 50px;
+  clip-path: polygon(20% 0%, 0% 20%, 20% 50%, 0% 80%, 20% 100%, 50% 80%, 80% 100%, 100% 80%, 80% 50%, 100% 20%, 80% 0%, 52% 25%);
+}
+
+@media (max-width: 428px) {
+  body {
+    grid-template-rows: 1fr;
+  }
+
+  header {
+    padding: 10px 30px;
+    width: 100vw;
+  }
+  header nav .logoTipo .options {
+    display: none;
+  }
+  header nav .menu .search {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+  main .container {
+    height: auto;
+  }
+  main .container .top .header-top {
+    justify-content: center;
+  }
+  main .container .top .header-top ion-icon {
+    display: none;
+  }
+  main .container .top .films-top {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 30px;
+  }
+  main .container .top .films-top .film-top a img {
+    width: 15em;
+  }
+  main .container .pop .header-pop {
+    flex-direction: column;
+    text-align: center;
+    font-size: 15pt;
+  }
+  main .container .pop .films {
+    padding: 10px 30px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  main .container .pop .films .film .linkFilms .poster {
+    width: 15em;
+  }
+  main .container .pages {
+    height: 50px;
+  }
+  main .container .pages .page {
+    width: 50%;
+  }
+  main .container .pages .number-pages {
+    width: 50%;
+  }
+  main .container .pages .number-pages .number-page {
+    width: 50%;
+  }
+}
+@media (max-width: 834px) {
+  body {
+    grid-template-rows: 1fr;
+  }
+
+  header {
+    padding: 10px 30px;
+    width: 100vw;
+  }
+  header nav .logoTipo .options {
+    width: 100%;
+    font-size: 15pt;
+  }
+  header nav .menu {
+    width: auto;
+  }
+  header nav .menu .search {
+    display: none;
+  }
+
+  main {
+    width: 100vw;
+  }
+  main .container {
+    height: auto;
+  }
+  main .container .top .header-top {
+    justify-content: center;
+    font-size: 1pt;
+  }
+  main .container .top .header-top ion-icon {
+    display: none;
+  }
+  main .container .top .films-top {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 30px;
+  }
+  main .container .top .films-top .film-top a img {
+    width: 15em;
+  }
+  main .container .pop .header-pop {
+    flex-direction: column;
+    text-align: center;
+    font-size: 15pt;
+  }
+  main .container .pop .films {
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  main .container .pop .films .film .linkFilms .poster {
+    width: 15em;
+  }
+  main .container .pages {
+    height: 50px;
+  }
+  main .container .pages .page {
+    width: 50%;
+  }
+  main .container .pages .number-pages {
+    width: 50%;
+  }
+  main .container .pages .number-pages .number-page {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
